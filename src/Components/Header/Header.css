@@ -1,0 +1,22 @@
+#Header{
+    display: flex;
+    justify-content: space-between;
+    background: url(../Assests/pexels-fwstudio-33348-129731.jpg);
+}
+.details{
+    margin: 10px 10px;
+}
+.details h1,p{
+    color: #563A9C;
+}
+.details button{
+    display: flex;
+    width: 100px;
+    /* height: 50px; */
+    justify-content: space-between;
+    background-color: blue;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 13px 20px;
+}

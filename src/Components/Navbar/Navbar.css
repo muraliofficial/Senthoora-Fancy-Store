@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+#NName{
+    color: #FF6500;
+}
+
+#Navbar-max{
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid rgb(9, 255, 0); */
+    box-shadow: 0px 5px 5px #858585;
+    max-width: 100%;
+    position: sticky;
+}
+
+#Navbar-max ul{
+    list-style: none;
+    display: inline-flex;
+    margin: 10px 10px;
+}
+#Navbar-max ul li{
+    color: #FF6500;
+    padding: 5px 20px;
+    border-radius: 10px;
+    font-optical-sizing: auto;
+    font-family: "Sour Gummy", sans-serif;
+    cursor: pointer;
+    transition: 0.25s;
+}
+#Navbar-max ul li:hover{
+    box-shadow: inset 0px 1px 5px 0px #FF6500, 0px 5px 5px #858585;
+    text-shadow: 0px 1px 1px #FF6500;
+}
+
+#Navbar-min{
+    box-shadow: 0px 3px 3px #858585;
+    padding: 5px 10px;
+    max-width: 100%;
+    position: sticky;
+}
+
+@media only screen and (min-width:720px) {
+    #Navbar-min{
+        display: none;
+    }
+    #Navbar-max{
+        display: flex;
+    }
+}
+@media only screen and (max-width:719px) {
+    #Navbar-min{
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+    }
+    #Navbar-min #NName{
+        font-size: 19px;
+    }
+    #Navbar-max{
+        display: none;
+    }
+    #offcanvasNavbar2{
+        width: 60%;
+    }
+}
