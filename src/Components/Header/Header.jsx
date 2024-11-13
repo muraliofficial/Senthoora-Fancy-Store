@@ -8,10 +8,10 @@ export default function Header() {
         <h1>Happy to see you!</h1>
         <p>Welcome to Sree Sendhura Fancy Store, Where Gifts Spark Joy and Creativity Flows!</p>
         <p>Welcome! Your Destination for Thoughtful Gifts and Creative Supplies!</p>
-        <button><span class="material-symbols-outlined">phone_in_talk</span> Call </button>
+        <button onClick={()=>{window.location.href = 'tel:+916383217328'}}><span class="material-symbols-outlined">phone_in_talk</span> Call </button>
       </div>
       <div className="other">
-        
+
       </div>
     </div>
   )
