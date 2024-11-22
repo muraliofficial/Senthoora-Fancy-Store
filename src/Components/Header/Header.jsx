@@ -1,18 +1,19 @@
-import React from 'react'
-import './Header.css'
+import React from 'react';
+import './Header.css';
+import assets from '../Assests/Assets';
 
-export default function Header() {
+const Header = () => {
   return (
-    <div className='container-fluid' id='Header'>
-      <div className="details">
-        <h1>Happy to see you!</h1>
-        <p>Welcome to Sree Sendhura Fancy Store, Where Gifts Spark Joy and Creativity Flows!</p>
-        <p>Welcome! Your Destination for Thoughtful Gifts and Creative Supplies!</p>
-        <button onClick={()=>{window.location.href = 'tel:+916383217328'}}><span class="material-symbols-outlined">phone_in_talk</span> Call </button>
-      </div>
-      <div className="other">
-
+    <div className="body">
+      <div className="box">
+        {[...Array(8)].map((_, index) => (
+          <span style={{ '--i': index + 1 }} key={index}>
+            <img src={assets.testimg} alt={`Cube side ${index + 1}`} />
+          </span>
+        ))}
       </div>
     </div>
-  )
-}
+  );
+};
+
+export default Header;
