@@ -1,43 +1,19 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './Header.css';
-import assets from '../Assests/Assets';
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // Import AOS styles
-
-const Header = () => {
-  const images = [
-    { src: assets.Bangles, alt: 'Bangles' },
-    { src: assets.Handbags, alt: 'Handbags' },
-    { src: assets.Makeupitems, alt: 'Makeup Items' },
-    { src: assets.giftitem, alt: 'Gift Item' },
-    { src: assets.perfumes, alt: 'Perfumes' },
-    { src: assets.smallDecors, alt: 'Small Decors' },
-    { src: assets.stationery, alt: 'Stationery' },
-    { src: assets.toys, alt: 'Toys' },
-  ];
-
-  useEffect(() => {
-    AOS.init({ duration: 1000, once: true }); // Initialize AOS with custom settings
-  }, []);
-
+export default function Header() {
   return (
-    <div className="container-fluid">
-      <div className="head">
-        {/* Add any header content here if needed */}
-      </div>
-      <div className="body" data-aos="fade-up">
-        <h1>Welcome To Our Shop</h1>
-        <h3>Explore Our Newest</h3>
-        <div className="box">
-          {images.map((image, index) => (
-            <span key={index} style={{ '--i': index + 1 }}>
-              <img src={image.src} alt={image.alt} />
-            </span>
-          ))}
+    <div className='' id='Header'>
+      <div className="container" id='Header-Container'>
+        <div className="row">
+          <div className="col-6">
+            <div className="card">
+            <h2> Welcome ✌🏻</h2>
+            <p>Welcome to our shop! We hope you discover exactly what you're looking for and enjoy a seamless, satisfying shopping experience with us</p>
+            </div>
+          </div>
+          <div className="col-6"></div>
         </div>
       </div>
     </div>
-  );
-};
-
-export default Header;
+  )
+}

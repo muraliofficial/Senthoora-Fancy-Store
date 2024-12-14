@@ -28,7 +28,7 @@
     transition: 0.25s;
 }
 #Navbar-max ul li:hover{
-    box-shadow: inset 0px 1px 5px 0px #FF6500, 0px 5px 5px #858585;
+    box-shadow: inset 0px 1px 5px 0px transparent, 0px 5px 5px #858585;
     text-shadow: 0px 1px 1px #FF6500;
 }
 
